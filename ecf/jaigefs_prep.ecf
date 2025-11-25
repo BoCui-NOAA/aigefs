@@ -14,7 +14,17 @@ export model=aigefs
 
 export cyc=%CYC%
 
+module load PrgEnv-intel/${PrgEnv_intel_ver:?}
 module load intel/${intel_ver:?}
+module load craype/${craype_ver:?}
+module load cray-mpich/${cray_mpich_ver:?}
+module load netcdf-D/${netcdf_D_ver:?}
+module load libaec/${libaec_ver:?}
+module load ip/${ip_ver:?}
+module load g2c/${g2c_ver:?}
+module load jasper/${jasper_ver:?}
+module load libpng/${libpng_ver:?}
+module load zlib/${zlib_ver:?}
 module load wgrib2/${wgrib2_ver:?}
 module load libjpeg-turbo/${libjpeg_turbo_ver:?}
 
