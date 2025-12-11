@@ -114,6 +114,15 @@ export err=$?; err_chk
 #cat $DATAHOLD/dir_avgspr_bc/$pgmout.360_avgspr
 #cat $DATAHOLD/dir_avgspr/$pgmout.360_avgspr
 
+# Print exec output
+if [ -e ${pgmout}.${fh}_avgspr_pres ]; then
+  cat ${pgmout}.${fh}_avgspr_pres
+fi
+if [ -e ${pgmout}.${fh}_avgspr_sfc ]; then
+  cat ${pgmout}.${fh}_avgspr_sfc
+fi
+
+
 msg="JOB COMPLETED NORMALLY"
 postmsg "$jlogfile" "$msg"
 
