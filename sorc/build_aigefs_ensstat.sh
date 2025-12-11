@@ -23,7 +23,7 @@ cd ${progname}.fd
 export FCMP=${FCMP:-ftn}
 export FCMP95=$FCMP
 
-if [ "$DEBUG" = 'Y' ] ; then
+if [ -v DEBUG && "$DEBUG" = 'Y' ] ; then
   #export FFLAGSM="-O0 -traceback -check all -ftrapuv -convert big_endian"
   export FFLAGSM="-O0 -traceback -g -check all -ftrapuv -convert big_endian"
 else
